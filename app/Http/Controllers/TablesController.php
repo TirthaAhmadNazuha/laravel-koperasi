@@ -55,7 +55,6 @@ abstract class TablesController extends Controller
     } catch (QueryException $e) {
       if ($this->shouldAddTimestamps($e)) {
         Schema::table($this->getModel()->getTable(), function (Blueprint $table) {
-          dd($table);
           $table->timestamps(); // Adds both 'created_at' and 'updated_at'
         });
 

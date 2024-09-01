@@ -14,7 +14,7 @@ class Pinjam extends Model
   protected $keyType = 'string';
   protected $fillable = [
     "no_pinjam",
-    "tangal",
+    "tanggal",
     "no_anggota",
     "jml_pinjam",
     "kodeksr",

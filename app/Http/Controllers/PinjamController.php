@@ -11,13 +11,15 @@ class PinjamController extends TablesController
     parent::__construct(
       Pinjam::class,
       [
-        'title' => 'Anggota',
-        'columns' => ['nomor pinjam', "tangal",
-          "nomor anggota",
-          "jumlah pinjam",
-          "kode kasir",
+        'title' => 'Pinjam',
+        'columns' => [
+          'nomor pinjam',
+          'tangal',
+          'nomor anggota',
+          'jumlah pinjam',
+          'kode kasir',
         ],
-        'name_route' => 'anggota',
+        'name_route' => 'pinjam',
       ]
     );
   }
